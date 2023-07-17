@@ -1,0 +1,55 @@
+.main {
+    display: flex;
+    width: 75%;
+    height:30em;
+    margin: auto;
+    margin-top: 5em;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    background-color: rgb(240, 240, 240);
+}
+
+.panel {
+    display: inline-flex;
+    width: 75%;
+    height: 30%;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(255, 254, 254);
+}
+
+.typing-area {
+    width: 75%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: rgb(255, 254, 254);
+    box-shadow: 0px 0px 30px -10px black;
+}
+
+.timer {
+    display: flex;
+    border: 5px solid rgb(255, 3, 3);
+    width: 7em;
+    height: 7em;
+    border-radius: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.speed {
+    width: 6em;
+    height: 6em;
+    border-radius: 20px;
+    border: 5px solid orange;
+}
+
+.accuracy {
+    width: 6em;
+    height: 6em;
+    border-radius: 20px;
+    border: 5px solid orange;
+}
