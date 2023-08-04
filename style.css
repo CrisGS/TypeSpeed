@@ -1,110 +1,153 @@
 .main {
-    display: flex;
-    width: 75%;
-    height:30em;
-    margin: auto;
-    margin-top: 5em;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 15px;
-    background-color: rgb(240, 240, 240);
+  display: flex;
+  width: 75%;
+  height:30em;
+  margin: 40px auto 40px auto;
+  margin-top: 2.5em;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  background-color: rgb(240, 240, 240);
 }
 
 .panel {
-    display: inline-flex;
-    width: 75%;
-    height: 30%;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 15px;
-    background-color: rgb(240, 240, 240);
+  display: inline-flex;
+  width: 75%;
+  height: 30%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgb(240, 240, 240);
 }
 
 .typing-area {
-    width: 75%;
-    height: 100px;
-    border-radius: 15px;
-    background-color: rgb(255, 254, 254);
-    box-shadow: 0px 0px 30px -10px black;
+  width: 75%;
+  height: 35%;
+  border-radius: 15px;
+  background-color: rgb(255, 254, 254);
+  box-shadow: 0px 0px 30px -10px black;
 }
 
 .timer {
-    display: flex;
-    border: 5px solid rgb(255, 3, 3);
-    width: 7em;
-    height: 7em;
-    border-radius: 100px;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(255, 254, 254);
+  display: flex;
+  border: 5px solid rgb(255, 3, 3);
+  width: 7em;
+  height: 7em;
+  border-radius: 100px;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellow;
 }
 
 .time-value {
-    font-size: 3rem;
-    font-weight: bold;
-    height: 60px;
+  font-size: 3rem;
+  font-weight: bold;
+  height: 60px;
 }
 
 .time-units {
-    font-size: 1rem;
-    font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .speed-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 6em;
-    height: 6em;
-    border-radius: 20px;
-    border: 5px solid orange;
-    background-color: rgb(255, 254, 254);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6em;
+  height: 6em;
+  border-radius: 20px;
+  border: 5px solid orange;
+  background-color: yellow;
 }
 
 .speed-value {
-    font-size: 3rem;
-    font-weight: bold;
-    height:60px;
+  font-size: 3rem;
+  font-weight: bold;
+  height:60px;
 }
 
 .speed-units {
-    font-size: 1rem;
-    font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .accuracy-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 6em;
-    height: 6em;
-    border-radius: 20px;
-    border: 5px solid orange;
-    background-color: rgb(255, 254, 254);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6em;
+  height: 6em;
+  border-radius: 20px;
+  border: 5px solid orange;
+  background-color: yellow;
 }
 
 .accuracy-value {
-    font-size: 3rem;
-    font-weight: bold;
-    height:60px;
+  font-size: 3rem;
+  font-weight: bold;
+  height:60px;
 }
 
 .accuracy-units {
-    font-size: 1rem;
-    font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .text {
-    border: none;
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
-    font-size: 2.5rem;
-    font-weight: 500;
-    font-family: cursive;
+  border: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: cursive;
+  resize: none;
+}
+
+.given-text-container {
+  display: flex;
+  width: 75%;
+  height: 15%;
+  border-radius: 15px;
+  background-color: rgb(255, 254, 254);
+  box-shadow: 0px 0px 30px -10px black;
+}
+
+.given-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-left: 300px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: cursive;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 *:focus {
-    outline: none;
+  outline: none;
+}
+
+.buttons-place {
+  display: flex;
+  width: 75%;
+  height: fit-content;
+  justify-content: center;
+}
+
+.all-content {
+  display: flex;
+  width: 100%;
+  height: 40rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-outline-secondary {
+  width: 10em;
 }

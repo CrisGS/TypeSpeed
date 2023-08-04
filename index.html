@@ -3,24 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Typing speed</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
   <body>
     <h1 style="text-align:center">Typing speed test</h1>
-    <div class="main">
-      <div class="panel">
-        <div class="timer">
-          <span class="time"></span>
-          <span class="time-units">Seconds</span>
+    <div class="all-content">
+      <div class="main">
+        <div class="panel">
+          <div class="timer">
+            <span class="time-value" id="time-value"></span>
+            <span class="time-units">Seconds</span>
+          </div>
+          <div class="speed-info">
+            <span class="speed-value" id="speed-value"></span>
+            <span class="speed-units">Words/min</span>
+          </div>
+          <div class="accuracy-info">
+            <span class="accuracy-value" id="accuracy-value"></span>
+            <span class="accuracy-units">Words/min</span>
+          </div>
         </div>
-        <div class="speed"></div>
-        <div class="accuracy"></div>
+        <div class="given-text-container">
+          <span class="given-text" id="given-text"></span>
+        </div>
+        <div class="typing-area">
+          <textarea type="text" id="typeText" class="text"></textarea>
+        </div>
       </div>
-      <div class="typing-area"></div>
+      <div class="buttons-place">
+        <button type="button" class="btn btn-outline-secondary" id="start-button" style="font-weight: bold; font-size: large; border-width: 3px;" onclick="timer()">Start</button>
+      </div>
     </div>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
